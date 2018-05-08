@@ -49,3 +49,5 @@
 (require 'ox-qmd)
 (require 'toc-org)
 (add-hook 'org-mode-hook 'toc-org-enable)
+
+(setq flycheck-flake8-maximum-line-length 120)
