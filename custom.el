@@ -20,11 +20,16 @@
 
 (global-linum-mode t)
 
+(defun move-to-tmp-txt ()
+  (interactive)
+  (find-file "/tmp/test.txt"))
+
 (global-set-key (kbd "C-c j")  'windmove-left)
 (global-set-key (kbd "C-c k")  'windmove-down)
 (global-set-key (kbd "C-c i")    'windmove-up)
 (global-set-key (kbd "C-c l") 'windmove-right)
 (global-set-key (kbd "C-c r") 'indent-region)
+(global-set-key (kbd "C-c t") 'move-to-tmp-txt)
 
 (defun cs-yank-pop-forward ()
   (interactive)
